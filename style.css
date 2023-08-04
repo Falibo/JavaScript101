@@ -1,0 +1,88 @@
+body {
+    background-color:#3a2b8f;
+    font-family:'Courier New', Courier, monospace;
+    padding: 10px;
+  }
+  
+  #output {
+    margin: 0 auto;
+    
+    color:white;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #5c4eaf;
+    border-radius: 10px;
+    box-shadow: #5c4eaf 7px 7px;
+    padding: 10px;
+    
+  }
+  h1 {
+    font-size:28px;
+    color: white;
+
+  }
+  p{
+    font-size:16px;
+    color: pink;
+  }
+
+  h2 {
+    font-weight: 800;
+    font-size:52px;
+    color: darkkhaki;
+    text-align: center;
+    margin: 0;
+  }
+  h3 {
+    font-weight: 100;
+    margin: 0 auto;
+    font-size:16px;
+    color: yellow;
+    text-align: center;
+    margin: 0; 
+  }
+  hr {
+    position: relative;
+    top: -20px;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 40%;
+    border: 0;
+    height: 1px;
+    
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+  
+  
+  .cursor::after {
+    content:'';
+    display:inline-block;
+    margin-left:3px;
+    background-color:white;
+    animation-name:blink;
+    animation-duration:0.5s;
+    animation-iteration-count: infinite;
+  }
+  h1.cursor::after {
+    height:24px;
+    width:8px;
+  }
+  p.cursor::after {
+    height:13px;
+    width:4px;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity:1;
+    }
+    49% {
+      opacity:1;
+    }
+    50% {
+      opacity:0;
+    }
+    100% {
+      opacity:0;
+    }
+  }
